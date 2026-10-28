@@ -1,0 +1,18 @@
+CREATE DATABASE DuLieu
+GO
+
+USE DuLieu;
+GO
+
+CREATE TABLE SinhVien (
+	MaSinhVien NVARCHAR(10) NOT NULL PRIMARY KEY,
+	TenSinhVien NTEXT NOT NULL,
+	DiemTrungBinh NVARCHAR (8) NOT NULL
+	);
+	GO
+
+INSERT INTO SinhVien VALUES
+('0928780891', N'Bùi Hoàng Quân', '8.0'),
+('0928789090', N'Phạm Trung Kiên', '5.0');
+GO
+SELECT * FROM SinhVien;
